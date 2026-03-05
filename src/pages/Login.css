@@ -1,0 +1,190 @@
+.login-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    padding: 60px 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.login-form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    font-size: 28px;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-form p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Role Toggle Styles */
+.role-toggle {
+    display: flex;
+    background: #f0f2f5;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.role-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: #666;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.role-btn.active {
+    background: #fff;
+    color: var(--primary-blue);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--highlight-orange);
+    background: #fff;
+}
+
+/* Password Input Specifics */
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-pwd {
+    position: absolute;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-pwd:hover {
+    color: var(--primary-blue);
+}
+
+/* OTP specific style */
+.otp-input {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+/* Buttons and Links */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.recovery-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.recovery-links span {
+    color: #ddd;
+}
+
+.link-btn {
+    background: transparent;
+    border: none;
+    color: var(--primary-blue);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.link-btn:hover {
+    color: var(--highlight-orange);
+    text-decoration: underline;
+}
+
+.back-btn {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Success View for Username Recovery */
+.success-view {
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.recovered-text {
+    font-size: 24px;
+    color: var(--primary-blue);
+    margin: 20px 0 30px;
+    padding: 15px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border: 1px dashed #b0d4ff;
+}
