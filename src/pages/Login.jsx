@@ -15,12 +15,14 @@ const Login = () => {
   const [recoveredUser, setRecoveredUser] = useState('');
   const navigate = useNavigate();
 
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+
   // Handle standard Login process
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const endpoint = role === 'admin' ? '/api/auth/admin-login' : '/api/auth/login';
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch(`${API_BASE_URL}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ role, identifier, password })
@@ -49,7 +51,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/request-otp', {
+      const response = await fetch(`${API_BASE_URL}/api/auth/request-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier, type })
@@ -69,7 +71,7 @@ const Login = () => {
   const verifyOTP = async (e, type) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/auth/verify-otp', {
+      const response = await fetch(`${API_BASE_URL}/api/auth/verify-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier, otp })
@@ -98,7 +100,7 @@ const Login = () => {
       return;
     }
     try {
-      const response = await fetch('http://localhost:5000/api/auth/reset-password', {
+      const response = await fetch(`${API_BASE_URL}/api/auth/reset-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier, newPassword })
