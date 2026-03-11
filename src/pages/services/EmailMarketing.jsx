@@ -4,12 +4,30 @@ import { Link } from 'react-router-dom';
 const EmailMarketing = () => {
   return (
     <>
-<section className="service-hero" style={{ backgroundImage: "linear-gradient(rgba(13, 33, 55, 0.85), rgba(26, 58, 92, 0.85)), url('https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&q=80&w=1600')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="container">
-            <h2>Digital Marketing</h2>
-            <h1>Email Marketing Services</h1>
+      {/*  Hero Banner  */}
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/email-marketing-banner.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0 80px",
+        borderBottom: "3px solid #f39c12"
+      }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <h1 style={{
+            fontSize: "52px",
+            fontWeight: "800",
+            color: "#ffffff",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            margin: 0,
+            textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
+          }}>
+            <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
+              Email Marketing
+            </span>
+          </h1>
         </div>
-    </section>
+      </section>
 
     <section className="service-main">
         <div className="container">
@@ -41,39 +59,44 @@ const EmailMarketing = () => {
         </div>
     </section>
 
-    <section className="service-details">
+    <section className="service-detail">
         <div className="container">
-            <h2>Our Email Marketing Solutions</h2>
-            <div className="details-grid">
-                <div className="detail-card">
-                    <i className="fas fa-newspaper"></i>
-                    <h3>Newsletter Campaigns</h3>
-                    <p>Regular newsletters to keep your audience informed and engaged with your brand.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-funnel-dollar"></i>
-                    <h3>Drip Campaigns</h3>
-                    <p>Automated email sequences that guide prospects through your sales funnel.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-percent"></i>
-                    <h3>Promotional Emails</h3>
-                    <p>Compelling promotional campaigns for product launches, sales, and special offers.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-redo"></i>
-                    <h3>Re-engagement</h3>
-                    <p>Win back inactive subscribers with targeted re-engagement campaigns.</p>
-                </div>
+          <div className="service-detail-grid">
+            <div className="detail-content">
+              <h3>Our Email Marketing Solutions</h3>
+              <ul className="detail-list">
+                <li>
+                  <h5>Newsletter Campaigns</h5>
+                  <p>Regular newsletters to keep your audience informed and engaged with your brand.</p>
+                </li>
+                <li>
+                  <h5>Drip Campaigns</h5>
+                  <p>Automated email sequences that guide prospects through your sales funnel.</p>
+                </li>
+                <li>
+                  <h5>Promotional Emails</h5>
+                  <p>Compelling promotional campaigns for product launches, sales, and special offers.</p>
+                </li>
+                <li>
+                  <h5>Re-engagement</h5>
+                  <p>Win back inactive subscribers with targeted re-engagement campaigns.</p>
+                </li>
+              </ul>
             </div>
+            <div className="detail-image">
+              <div className="placeholder-icon">
+                <i className="fas fa-tasks"></i>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section className="cta-section">
+    <section className="service-cta">
         <div className="container">
             <h2>Ready to Boost Your Email Marketing?</h2>
             <p>Let us help you create email campaigns that convert subscribers into customers.</p>
-            <Link to="/contact" className="btn-primary">Get Started Today</Link>
+            <Link to="/contact" className="btn-cta">Get Started Today</Link>
         </div>
     </section>
 </>

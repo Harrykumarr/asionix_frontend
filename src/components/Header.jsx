@@ -83,11 +83,11 @@ const Header = () => {
                             <div className="mega-menu-column">
                                 <h4><span className="highlight">V</span>FX Services</h4>
                                 <ul>
-                                    <li><Link to="/services/vfx-animation">3D Animation</Link></li>
-                                    <li><Link to="/services/vfx-animation">Motion Graphics</Link></li>
-                                    <li><Link to="/services/vfx-animation">Video Editing</Link></li>
-                                    <li><Link to="/services/vfx-animation">Visual Effects</Link></li>
-                                    <li><Link to="/services/vfx-animation">Compositing</Link></li>
+                                    <li><Link to="/services/3d-animation">3D Animation</Link></li>
+                                    <li><Link to="/services/motion-graphics">Motion Graphics</Link></li>
+                                    <li><Link to="/services/video-editing">Video Editing</Link></li>
+                                    <li><Link to="/services/visual-effects">Visual Effects</Link></li>
+                                    <li><Link to="/services/compositing">Compositing</Link></li>
                                 </ul>
                             </div>
                             <div className="mega-menu-column">

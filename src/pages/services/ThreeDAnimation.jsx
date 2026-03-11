@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Salesforce = () => {
+const ThreeDAnimation = () => {
   return (
     <>
       {/*  Hero Banner  */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/salesforce-banner.png')",
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1600&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "100px 0 80px",
@@ -23,7 +23,7 @@ const Salesforce = () => {
             textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
           }}>
             <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
-              Salesforce
+              3D Animation
             </span>
           </h1>
         </div>
@@ -35,60 +35,60 @@ const Salesforce = () => {
           <div className="service-main-grid">
             <div className="service-features-grid">
               <div className="feature-box">
-                <h4><i className="fas fa-cloud"></i> Sales Cloud</h4>
-                <p>Streamline your sales process with powerful CRM tools, lead management, and opportunity tracking for maximum revenue growth.</p>
+                <h4><i className="fas fa-cube"></i> 3D Modeling</h4>
+                <p>High-quality 3D models for characters, props, environments, and products.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-headset"></i> Service Cloud</h4>
-                <p>Deliver exceptional customer service with case management, knowledge base, and omnichannel support solutions.</p>
+                <h4><i className="fas fa-walking"></i> Character Animation</h4>
+                <p>Lifelike character animation with realistic movement and expressions.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-bullhorn"></i> Marketing Cloud</h4>
-                <p>Create personalized customer journeys with email marketing, social media management, and marketing automation.</p>
+                <h4><i className="fas fa-building"></i> Architectural Visualization</h4>
+                <p>Photorealistic 3D renders of architectural designs and real estate projects.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-cogs"></i> Custom Development</h4>
-                <p>Build custom Salesforce applications using Apex, Lightning components, and Visualforce for your unique business needs.</p>
+                <h4><i className="fas fa-gamepad"></i> Game Assets</h4>
+                <p>Optimized 3D assets and animations ready for integration into game engines.</p>
               </div>
             </div>
             <div className="service-image">
               <div className="placeholder-icon">
-                <i className="fab fa-salesforce"></i>
+                <i className="fas fa-cubes"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/*  Our Salesforce Services  */}
+      {/*  3D Animation Solutions  */}
       <section className="service-detail">
         <div className="container">
           <div className="service-detail-grid">
             <div className="detail-content">
-              <h3>Our Salesforce Services</h3>
-              <p>We provide end-to-end Salesforce solutions to help you maximize the value of your CRM investment.</p>
+              <h3>Our 3D Animation Solutions</h3>
+              <p>We provide end-to-end 3D animation services, from concept art to final rendering.</p>
               <ul className="detail-list">
                 <li>
-                  <h5>Implementation</h5>
-                  <p>End-to-end Salesforce implementation tailored to your business processes and requirements.</p>
+                  <h5>Concept &amp; Storyboarding</h5>
+                  <p>Visual planning and storyboarding to map out the narrative and style.</p>
                 </li>
                 <li>
-                  <h5>Integration</h5>
-                  <p>Seamless integration with third-party applications, ERP systems, and legacy databases.</p>
+                  <h5>Rigging &amp; Animation</h5>
+                  <p>Advanced skeleton rigging and fluid animation for complex models.</p>
                 </li>
                 <li>
-                  <h5>Consulting</h5>
-                  <p>Expert consulting to optimize your Salesforce org and maximize ROI on your investment.</p>
+                  <h5>Texturing &amp; Lighting</h5>
+                  <p>Detailed materials, textures, and realistic lighting setups.</p>
                 </li>
                 <li>
-                  <h5>Training</h5>
-                  <p>Comprehensive training programs for administrators, developers, and end-users.</p>
+                  <h5>Rendering</h5>
+                  <p>High-resolution output using state-of-the-art rendering engines.</p>
                 </li>
               </ul>
             </div>
             <div className="detail-image">
               <div className="placeholder-icon">
-                <i className="fas fa-cloud-upload-alt"></i>
+                <i className="fas fa-vr-cardboard"></i>
               </div>
             </div>
           </div>
@@ -98,8 +98,8 @@ const Salesforce = () => {
       {/*  CTA Section  */}
       <section className="service-cta">
         <div className="container">
-          <h2>Ready to Transform Your Business with Salesforce?</h2>
-          <p>Let our certified Salesforce experts help you leverage the world's #1 CRM platform.</p>
+          <h2>Ready to Bring Your Ideas to Life in 3D?</h2>
+          <p>Let our expert animators create stunning 3D content for your project.</p>
           <Link to="/contact" className="btn-cta">Get Started Today</Link>
         </div>
       </section>
@@ -107,4 +107,4 @@ const Salesforce = () => {
   );
 };
 
-export default Salesforce;
+export default ThreeDAnimation;

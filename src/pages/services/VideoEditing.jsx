@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Salesforce = () => {
+const VideoEditing = () => {
   return (
     <>
       {/*  Hero Banner  */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/salesforce-banner.png')",
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1600&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "100px 0 80px",
@@ -23,7 +23,7 @@ const Salesforce = () => {
             textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
           }}>
             <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
-              Salesforce
+              Video Editing
             </span>
           </h1>
         </div>
@@ -35,60 +35,60 @@ const Salesforce = () => {
           <div className="service-main-grid">
             <div className="service-features-grid">
               <div className="feature-box">
-                <h4><i className="fas fa-cloud"></i> Sales Cloud</h4>
-                <p>Streamline your sales process with powerful CRM tools, lead management, and opportunity tracking for maximum revenue growth.</p>
+                <h4><i className="fas fa-cut"></i> Professional Editing</h4>
+                <p>Seamlessly cut and arrange footage to tell compelling stories.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-headset"></i> Service Cloud</h4>
-                <p>Deliver exceptional customer service with case management, knowledge base, and omnichannel support solutions.</p>
+                <h4><i className="fas fa-palette"></i> Color Grading</h4>
+                <p>Enhancing visuals with expert color correction and grading processes.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-bullhorn"></i> Marketing Cloud</h4>
-                <p>Create personalized customer journeys with email marketing, social media management, and marketing automation.</p>
+                <h4><i className="fas fa-volume-up"></i> Sound Mixing</h4>
+                <p>Crisp audio mastering, dialogue cleanup, and sound effect integration.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-cogs"></i> Custom Development</h4>
-                <p>Build custom Salesforce applications using Apex, Lightning components, and Visualforce for your unique business needs.</p>
+                <h4><i className="fas fa-tachometer-alt"></i> Fast Turnaround</h4>
+                <p>Efficient delivery times without compromising on production quality.</p>
               </div>
             </div>
             <div className="service-image">
               <div className="placeholder-icon">
-                <i className="fab fa-salesforce"></i>
+                <i className="fas fa-video"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/*  Our Salesforce Services  */}
+      {/*  Details Section  */}
       <section className="service-detail">
         <div className="container">
           <div className="service-detail-grid">
             <div className="detail-content">
-              <h3>Our Salesforce Services</h3>
-              <p>We provide end-to-end Salesforce solutions to help you maximize the value of your CRM investment.</p>
+              <h3>Our Video Editing Process</h3>
+              <p>We take raw footage and transform it into high-impact visual content ready for broadcast or the web.</p>
               <ul className="detail-list">
                 <li>
-                  <h5>Implementation</h5>
-                  <p>End-to-end Salesforce implementation tailored to your business processes and requirements.</p>
+                  <h5>Rough Cut &amp; Review</h5>
+                  <p>Organizing clips and crafting the initial sequence for client feedback.</p>
                 </li>
                 <li>
-                  <h5>Integration</h5>
-                  <p>Seamless integration with third-party applications, ERP systems, and legacy databases.</p>
+                  <h5>Transitions &amp; Effects</h5>
+                  <p>Adding smooth transitions and visual enhancements where needed.</p>
                 </li>
                 <li>
-                  <h5>Consulting</h5>
-                  <p>Expert consulting to optimize your Salesforce org and maximize ROI on your investment.</p>
+                  <h5>Audio Sync &amp; Treatment</h5>
+                  <p>Ensuring perfect lip-sync and a balanced, high-quality audio mix.</p>
                 </li>
                 <li>
-                  <h5>Training</h5>
-                  <p>Comprehensive training programs for administrators, developers, and end-users.</p>
+                  <h5>Final Output</h5>
+                  <p>Exporting the final video in formats optimized for web, TV, and social media.</p>
                 </li>
               </ul>
             </div>
             <div className="detail-image">
               <div className="placeholder-icon">
-                <i className="fas fa-cloud-upload-alt"></i>
+                <i className="fas fa-sliders-h"></i>
               </div>
             </div>
           </div>
@@ -98,13 +98,13 @@ const Salesforce = () => {
       {/*  CTA Section  */}
       <section className="service-cta">
         <div className="container">
-          <h2>Ready to Transform Your Business with Salesforce?</h2>
-          <p>Let our certified Salesforce experts help you leverage the world's #1 CRM platform.</p>
-          <Link to="/contact" className="btn-cta">Get Started Today</Link>
+          <h2>Need Professional Video Editing?</h2>
+          <p>Let's make your raw footage look cinematic and professional.</p>
+          <Link to="/contact" className="btn-cta">Contact Us</Link>
         </div>
       </section>
     </>
   );
 };
 
-export default Salesforce;
+export default VideoEditing;

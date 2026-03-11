@@ -4,12 +4,30 @@ import { Link } from 'react-router-dom';
 const ContentWriting = () => {
   return (
     <>
-<section className="service-hero" style={{ backgroundImage: "linear-gradient(rgba(13, 33, 55, 0.85), rgba(26, 58, 92, 0.85)), url('https://images.unsplash.com/photo-1455390582262-044cdead2708?auto=format&fit=crop&q=80&w=1600')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="container">
-            <h2>Digital Marketing</h2>
-            <h1>Content Writing Services</h1>
+      {/*  Hero Banner  */}
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/content-writing-banner.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0 80px",
+        borderBottom: "3px solid #f39c12"
+      }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <h1 style={{
+            fontSize: "52px",
+            fontWeight: "800",
+            color: "#ffffff",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            margin: 0,
+            textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
+          }}>
+            <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
+              Content Writing
+            </span>
+          </h1>
         </div>
-    </section>
+      </section>
 
     <section className="service-main">
         <div className="container">
@@ -41,39 +59,44 @@ const ContentWriting = () => {
         </div>
     </section>
 
-    <section className="service-details">
+    <section className="service-detail">
         <div className="container">
-            <h2>Content Types We Create</h2>
-            <div className="details-grid">
-                <div className="detail-card">
-                    <i className="fas fa-book"></i>
-                    <h3>E-books & Whitepapers</h3>
-                    <p>In-depth resources that showcase your expertise and generate quality leads.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-clipboard-list"></i>
-                    <h3>Case Studies</h3>
-                    <p>Compelling success stories that demonstrate your value to potential customers.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-share-alt"></i>
-                    <h3>Social Media Content</h3>
-                    <p>Engaging posts optimized for each platform to grow your social presence.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-video"></i>
-                    <h3>Video Scripts</h3>
-                    <p>Professional scripts for explainer videos, testimonials, and promotional content.</p>
-                </div>
+          <div className="service-detail-grid">
+            <div className="detail-content">
+              <h3>Content Types We Create</h3>
+              <ul className="detail-list">
+                <li>
+                  <h5>E-books & Whitepapers</h5>
+                  <p>In-depth resources that showcase your expertise and generate quality leads.</p>
+                </li>
+                <li>
+                  <h5>Case Studies</h5>
+                  <p>Compelling success stories that demonstrate your value to potential customers.</p>
+                </li>
+                <li>
+                  <h5>Social Media Content</h5>
+                  <p>Engaging posts optimized for each platform to grow your social presence.</p>
+                </li>
+                <li>
+                  <h5>Video Scripts</h5>
+                  <p>Professional scripts for explainer videos, testimonials, and promotional content.</p>
+                </li>
+              </ul>
             </div>
+            <div className="detail-image">
+              <div className="placeholder-icon">
+                <i className="fas fa-tasks"></i>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section className="cta-section">
+    <section className="service-cta">
         <div className="container">
             <h2>Need Quality Content for Your Business?</h2>
             <p>Our expert writers create content that engages, informs, and converts.</p>
-            <Link to="/contact" className="btn-primary">Get a Quote</Link>
+            <Link to="/contact" className="btn-cta">Get a Quote</Link>
         </div>
     </section>
 </>

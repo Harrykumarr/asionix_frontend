@@ -4,12 +4,30 @@ import { Link } from 'react-router-dom';
 const CyberSecurity = () => {
   return (
     <>
-<section className="service-hero" style={{ backgroundImage: "linear-gradient(rgba(13, 33, 55, 0.85), rgba(26, 58, 92, 0.85)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1600')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="container">
-            <h2>Industry Skill Training</h2>
-            <h1>Cyber Security Training</h1>
+      {/*  Hero Banner  */}
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0 80px",
+        borderBottom: "3px solid #f39c12"
+      }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <h1 style={{
+            fontSize: "52px",
+            fontWeight: "800",
+            color: "#ffffff",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            margin: 0,
+            textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
+          }}>
+            <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
+              Cyber Security
+            </span>
+          </h1>
         </div>
-    </section>
+      </section>
 
     <section className="service-main">
         <div className="container">
@@ -41,39 +59,44 @@ const CyberSecurity = () => {
         </div>
     </section>
 
-    <section className="service-details">
+    <section className="service-detail">
         <div className="container">
-            <h2>Course Modules</h2>
-            <div className="details-grid">
-                <div className="detail-card">
-                    <i className="fas fa-globe"></i>
-                    <h3>Web Security</h3>
-                    <p>OWASP Top 10, SQL injection, XSS, CSRF, and web application security testing.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-cloud"></i>
-                    <h3>Cloud Security</h3>
-                    <p>Securing cloud infrastructure on AWS, Azure, and GCP platforms.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-search"></i>
-                    <h3>Incident Response</h3>
-                    <p>Security incident handling, forensics, and disaster recovery procedures.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-certificate"></i>
-                    <h3>Certifications</h3>
-                    <p>Preparation for CEH, CISSP, CompTIA Security+, and other certifications.</p>
-                </div>
+          <div className="service-detail-grid">
+            <div className="detail-content">
+              <h3>Course Modules</h3>
+              <ul className="detail-list">
+                <li>
+                  <h5>Web Security</h5>
+                  <p>OWASP Top 10, SQL injection, XSS, CSRF, and web application security testing.</p>
+                </li>
+                <li>
+                  <h5>Cloud Security</h5>
+                  <p>Securing cloud infrastructure on AWS, Azure, and GCP platforms.</p>
+                </li>
+                <li>
+                  <h5>Incident Response</h5>
+                  <p>Security incident handling, forensics, and disaster recovery procedures.</p>
+                </li>
+                <li>
+                  <h5>Certifications</h5>
+                  <p>Preparation for CEH, CISSP, CompTIA Security+, and other certifications.</p>
+                </li>
+              </ul>
             </div>
+            <div className="detail-image">
+              <div className="placeholder-icon">
+                <i className="fas fa-tasks"></i>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section className="cta-section">
+    <section className="service-cta">
         <div className="container">
             <h2>Become a Cyber Security Professional</h2>
             <p>Join our comprehensive training program and protect organizations from cyber threats.</p>
-            <Link to="/contact" className="btn-primary">Enroll Now</Link>
+            <Link to="/contact" className="btn-cta">Enroll Now</Link>
         </div>
     </section>
 </>

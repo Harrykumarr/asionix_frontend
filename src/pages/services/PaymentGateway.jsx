@@ -4,12 +4,30 @@ import { Link } from 'react-router-dom';
 const PaymentGateway = () => {
   return (
     <>
-<section className="service-hero" style={{ backgroundImage: "linear-gradient(rgba(13, 33, 55, 0.85), rgba(26, 58, 92, 0.85)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1600')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="container">
-            <h2>Digital Marketing</h2>
-            <h1>Payment Gateway Services</h1>
+      {/*  Hero Banner  */}
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0 80px",
+        borderBottom: "3px solid #f39c12"
+      }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <h1 style={{
+            fontSize: "52px",
+            fontWeight: "800",
+            color: "#ffffff",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            margin: 0,
+            textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
+          }}>
+            <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
+              Payment Gateway
+            </span>
+          </h1>
         </div>
-    </section>
+      </section>
 
     <section className="service-main">
         <div className="container">
@@ -41,39 +59,44 @@ const PaymentGateway = () => {
         </div>
     </section>
 
-    <section className="service-details">
+    <section className="service-detail">
         <div className="container">
-            <h2>Our Payment Gateway Features</h2>
-            <div className="details-grid">
-                <div className="detail-card">
-                    <i className="fas fa-plug"></i>
-                    <h3>Easy Integration</h3>
-                    <p>Simple and quick API integration to your existing platforms.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-tachometer-alt"></i>
-                    <h3>Fast Processing</h3>
-                    <p>Real-time processing for instant payment confirmations.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-file-invoice-dollar"></i>
-                    <h3>Detailed Reporting</h3>
-                    <p>Comprehensive dashboard and analytics for transaction monitoring.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-headset"></i>
-                    <h3>24/7 Support</h3>
-                    <p>Dedicated technical support team to assist you anytime.</p>
-                </div>
+          <div className="service-detail-grid">
+            <div className="detail-content">
+              <h3>Our Payment Gateway Features</h3>
+              <ul className="detail-list">
+                <li>
+                  <h5>Easy Integration</h5>
+                  <p>Simple and quick API integration to your existing platforms.</p>
+                </li>
+                <li>
+                  <h5>Fast Processing</h5>
+                  <p>Real-time processing for instant payment confirmations.</p>
+                </li>
+                <li>
+                  <h5>Detailed Reporting</h5>
+                  <p>Comprehensive dashboard and analytics for transaction monitoring.</p>
+                </li>
+                <li>
+                  <h5>24/7 Support</h5>
+                  <p>Dedicated technical support team to assist you anytime.</p>
+                </li>
+              </ul>
             </div>
+            <div className="detail-image">
+              <div className="placeholder-icon">
+                <i className="fas fa-tasks"></i>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section className="cta-section">
+    <section className="service-cta">
         <div className="container">
             <h2>Ready to accept payments seamlessly?</h2>
             <p>Connect with us to get the best payment gateway solutions for your business.</p>
-            <Link to="/contact" className="btn-primary">Get Started</Link>
+            <Link to="/contact" className="btn-cta">Get Started</Link>
         </div>
     </section>
 </>

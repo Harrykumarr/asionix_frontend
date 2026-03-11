@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Salesforce = () => {
+const MotionGraphics = () => {
   return (
     <>
       {/*  Hero Banner  */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/salesforce-banner.png')",
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "100px 0 80px",
@@ -23,7 +23,7 @@ const Salesforce = () => {
             textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
           }}>
             <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
-              Salesforce
+              Motion Graphics
             </span>
           </h1>
         </div>
@@ -35,60 +35,60 @@ const Salesforce = () => {
           <div className="service-main-grid">
             <div className="service-features-grid">
               <div className="feature-box">
-                <h4><i className="fas fa-cloud"></i> Sales Cloud</h4>
-                <p>Streamline your sales process with powerful CRM tools, lead management, and opportunity tracking for maximum revenue growth.</p>
+                <h4><i className="fas fa-play"></i> Explainer Videos</h4>
+                <p>Engaging animated videos that explain your product or service clearly.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-headset"></i> Service Cloud</h4>
-                <p>Deliver exceptional customer service with case management, knowledge base, and omnichannel support solutions.</p>
+                <h4><i className="fas fa-font"></i> Kinetic Typography</h4>
+                <p>Dynamic text animations tailored to grab attention on social media.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-bullhorn"></i> Marketing Cloud</h4>
-                <p>Create personalized customer journeys with email marketing, social media management, and marketing automation.</p>
+                <h4><i className="fas fa-tv"></i> Broadcast Design</h4>
+                <p>Professional intro/outro sequences, lower thirds, and channel branding.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-cogs"></i> Custom Development</h4>
-                <p>Build custom Salesforce applications using Apex, Lightning components, and Visualforce for your unique business needs.</p>
+                <h4><i className="fas fa-ad"></i> Promotional Ads</h4>
+                <p>Eye-catching motion ads optimized for various digital marketing platforms.</p>
               </div>
             </div>
             <div className="service-image">
               <div className="placeholder-icon">
-                <i className="fab fa-salesforce"></i>
+                <i className="fas fa-film"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/*  Our Salesforce Services  */}
+      {/*  Details Section  */}
       <section className="service-detail">
         <div className="container">
           <div className="service-detail-grid">
             <div className="detail-content">
-              <h3>Our Salesforce Services</h3>
-              <p>We provide end-to-end Salesforce solutions to help you maximize the value of your CRM investment.</p>
+              <h3>Our Motion Graphics Services</h3>
+              <p>We combine design and animation to produce visually compelling stories that engage your audience.</p>
               <ul className="detail-list">
                 <li>
-                  <h5>Implementation</h5>
-                  <p>End-to-end Salesforce implementation tailored to your business processes and requirements.</p>
+                  <h5>Storyboarding &amp; Design</h5>
+                  <p>Meticulous planning and asset creation to ensure a cohesive style.</p>
                 </li>
                 <li>
-                  <h5>Integration</h5>
-                  <p>Seamless integration with third-party applications, ERP systems, and legacy databases.</p>
+                  <h5>2D/3D Animation Integration</h5>
+                  <p>Seamless blending of 2D motion with 3D elements for a richer look.</p>
                 </li>
                 <li>
-                  <h5>Consulting</h5>
-                  <p>Expert consulting to optimize your Salesforce org and maximize ROI on your investment.</p>
+                  <h5>Sound Design</h5>
+                  <p>Enhancing animations with matching sound effects and background music.</p>
                 </li>
                 <li>
-                  <h5>Training</h5>
-                  <p>Comprehensive training programs for administrators, developers, and end-users.</p>
+                  <h5>Multi-Platform Delivery</h5>
+                  <p>Exports in the exact formats required for web, TV, or social media.</p>
                 </li>
               </ul>
             </div>
             <div className="detail-image">
               <div className="placeholder-icon">
-                <i className="fas fa-cloud-upload-alt"></i>
+                <i className="fas fa-object-group"></i>
               </div>
             </div>
           </div>
@@ -98,13 +98,13 @@ const Salesforce = () => {
       {/*  CTA Section  */}
       <section className="service-cta">
         <div className="container">
-          <h2>Ready to Transform Your Business with Salesforce?</h2>
-          <p>Let our certified Salesforce experts help you leverage the world's #1 CRM platform.</p>
-          <Link to="/contact" className="btn-cta">Get Started Today</Link>
+          <h2>Need Dynamic Motion Graphics?</h2>
+          <p>Contact us today to elevate your brand's visual storytelling.</p>
+          <Link to="/contact" className="btn-cta">Work With Us</Link>
         </div>
       </section>
     </>
   );
 };
 
-export default Salesforce;
+export default MotionGraphics;

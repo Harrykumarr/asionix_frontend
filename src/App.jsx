@@ -43,7 +43,12 @@ import SapS4hana from './pages/services/SapS4hana';
 import SapSd from './pages/services/SapSd';
 import Seo from './pages/services/Seo';
 import SocialMediaMarketing from './pages/services/SocialMediaMarketing';
-import VfxAnimation from './pages/services/VfxAnimation';
+//import VfxAnimation from './pages/services/VfxAnimation';
+import ThreeDAnimation from './pages/services/ThreeDAnimation';
+import MotionGraphics from './pages/services/MotionGraphics';
+import VideoEditing from './pages/services/VideoEditing';
+import VisualEffects from './pages/services/VisualEffects';
+import Compositing from './pages/services/Compositing';
 import WordpressDevelopment from './pages/services/WordpressDevelopment';
 
 function App() {
@@ -91,7 +96,12 @@ function App() {
           <Route path="services/sap-sd" element={<SapSd />} />
           <Route path="services/seo" element={<Seo />} />
           <Route path="services/social-media-marketing" element={<SocialMediaMarketing />} />
-          <Route path="services/vfx-animation" element={<VfxAnimation />} />
+          {/* <Route path="services/vfx-animation" element={<VfxAnimation />} /> */}
+          <Route path="services/3d-animation" element={<ThreeDAnimation />} />
+          <Route path="services/motion-graphics" element={<MotionGraphics />} />
+          <Route path="services/video-editing" element={<VideoEditing />} />
+          <Route path="services/visual-effects" element={<VisualEffects />} />
+          <Route path="services/compositing" element={<Compositing />} />
           <Route path="services/wordpress-development" element={<WordpressDevelopment />} />
         </Route>
       </Routes>

@@ -4,12 +4,30 @@ import { Link } from 'react-router-dom';
 const BrandManagement = () => {
   return (
     <>
-<section className="service-hero" style={{ backgroundImage: "linear-gradient(rgba(13, 33, 55, 0.85), rgba(26, 58, 92, 0.85)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1600')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="container">
-            <h2>Digital Marketing</h2>
-            <h1>Brand Management Services</h1>
+      {/*  Hero Banner  */}
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&q=80')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0 80px",
+        borderBottom: "3px solid #f39c12"
+      }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <h1 style={{
+            fontSize: "52px",
+            fontWeight: "800",
+            color: "#ffffff",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            margin: 0,
+            textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
+          }}>
+            <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
+              Brand Management
+            </span>
+          </h1>
         </div>
-    </section>
+      </section>
 
     <section className="service-main">
         <div className="container">
@@ -41,39 +59,44 @@ const BrandManagement = () => {
         </div>
     </section>
 
-    <section className="service-details">
+    <section className="service-detail">
         <div className="container">
-            <h2>Our Brand Management Services</h2>
-            <div className="details-grid">
-                <div className="detail-card">
-                    <i className="fas fa-lightbulb"></i>
-                    <h3>Brand Strategy</h3>
-                    <p>Comprehensive brand strategy development aligned with your business goals.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-paint-brush"></i>
-                    <h3>Visual Design</h3>
-                    <p>Professional design services for all brand assets and marketing materials.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-shield-alt"></i>
-                    <h3>Crisis Management</h3>
-                    <p>Proactive reputation protection and crisis response strategies.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-users"></i>
-                    <h3>Community Building</h3>
-                    <p>Build and nurture a loyal community around your brand.</p>
-                </div>
+          <div className="service-detail-grid">
+            <div className="detail-content">
+              <h3>Our Brand Management Services</h3>
+              <ul className="detail-list">
+                <li>
+                  <h5>Brand Strategy</h5>
+                  <p>Comprehensive brand strategy development aligned with your business goals.</p>
+                </li>
+                <li>
+                  <h5>Visual Design</h5>
+                  <p>Professional design services for all brand assets and marketing materials.</p>
+                </li>
+                <li>
+                  <h5>Crisis Management</h5>
+                  <p>Proactive reputation protection and crisis response strategies.</p>
+                </li>
+                <li>
+                  <h5>Community Building</h5>
+                  <p>Build and nurture a loyal community around your brand.</p>
+                </li>
+              </ul>
             </div>
+            <div className="detail-image">
+              <div className="placeholder-icon">
+                <i className="fas fa-tasks"></i>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section className="cta-section">
+    <section className="service-cta">
         <div className="container">
             <h2>Ready to Build a Powerful Brand?</h2>
             <p>Let our experts help you create and manage a brand that stands out in the market.</p>
-            <Link to="/contact" className="btn-primary">Get Started</Link>
+            <Link to="/contact" className="btn-cta">Get Started</Link>
         </div>
     </section>
 </>

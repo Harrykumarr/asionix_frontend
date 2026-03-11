@@ -4,12 +4,30 @@ import { Link } from 'react-router-dom';
 const MachineLearning = () => {
   return (
     <>
-<section className="service-hero" style={{ backgroundImage: "linear-gradient(rgba(13, 33, 55, 0.85), rgba(26, 58, 92, 0.85)), url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1600')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="container">
-            <h2>Industry Skill Training</h2>
-            <h1>Machine Learning Training</h1>
+      {/*  Hero Banner  */}
+      <section style={{
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1600&q=80')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0 80px",
+        borderBottom: "3px solid #f39c12"
+      }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <h1 style={{
+            fontSize: "52px",
+            fontWeight: "800",
+            color: "#ffffff",
+            textTransform: "uppercase",
+            letterSpacing: "3px",
+            margin: 0,
+            textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
+          }}>
+            <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
+              Machine Learning
+            </span>
+          </h1>
         </div>
-    </section>
+      </section>
 
     <section className="service-main">
         <div className="container">
@@ -41,39 +59,44 @@ const MachineLearning = () => {
         </div>
     </section>
 
-    <section className="service-details">
+    <section className="service-detail">
         <div className="container">
-            <h2>Course Curriculum</h2>
-            <div className="details-grid">
-                <div className="detail-card">
-                    <i className="fas fa-database"></i>
-                    <h3>Data Preprocessing</h3>
-                    <p>Data cleaning, feature engineering, normalization, and handling missing values.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-network-wired"></i>
-                    <h3>Neural Networks</h3>
-                    <p>Deep learning architectures including CNNs, RNNs, and transformer models.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-balance-scale"></i>
-                    <h3>Model Evaluation</h3>
-                    <p>Cross-validation, hyperparameter tuning, and model selection techniques.</p>
-                </div>
-                <div className="detail-card">
-                    <i className="fas fa-rocket"></i>
-                    <h3>Deployment</h3>
-                    <p>Deploy ML models using Flask, FastAPI, Docker, and cloud platforms.</p>
-                </div>
+          <div className="service-detail-grid">
+            <div className="detail-content">
+              <h3>Course Curriculum</h3>
+              <ul className="detail-list">
+                <li>
+                  <h5>Data Preprocessing</h5>
+                  <p>Data cleaning, feature engineering, normalization, and handling missing values.</p>
+                </li>
+                <li>
+                  <h5>Neural Networks</h5>
+                  <p>Deep learning architectures including CNNs, RNNs, and transformer models.</p>
+                </li>
+                <li>
+                  <h5>Model Evaluation</h5>
+                  <p>Cross-validation, hyperparameter tuning, and model selection techniques.</p>
+                </li>
+                <li>
+                  <h5>Deployment</h5>
+                  <p>Deploy ML models using Flask, FastAPI, Docker, and cloud platforms.</p>
+                </li>
+              </ul>
             </div>
+            <div className="detail-image">
+              <div className="placeholder-icon">
+                <i className="fas fa-tasks"></i>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
-    <section className="cta-section">
+    <section className="service-cta">
         <div className="container">
             <h2>Start Your Machine Learning Journey</h2>
             <p>Learn from industry experts and build job-ready ML skills with hands-on projects.</p>
-            <Link to="/contact" className="btn-primary">Enroll Now</Link>
+            <Link to="/contact" className="btn-cta">Enroll Now</Link>
         </div>
     </section>
 </>

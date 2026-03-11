@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Salesforce = () => {
+const VisualEffects = () => {
   return (
     <>
       {/*  Hero Banner  */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/salesforce-banner.png')",
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1600&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "100px 0 80px",
@@ -23,7 +23,7 @@ const Salesforce = () => {
             textShadow: "2px 2px 10px rgba(0,0,0,0.5)"
           }}>
             <span style={{ borderLeft: "5px solid #f39c12", paddingLeft: "20px" }}>
-              Salesforce
+              Visual Effects
             </span>
           </h1>
         </div>
@@ -35,60 +35,60 @@ const Salesforce = () => {
           <div className="service-main-grid">
             <div className="service-features-grid">
               <div className="feature-box">
-                <h4><i className="fas fa-cloud"></i> Sales Cloud</h4>
-                <p>Streamline your sales process with powerful CRM tools, lead management, and opportunity tracking for maximum revenue growth.</p>
+                <h4><i className="fas fa-meteor"></i> Particle Effects</h4>
+                <p>Creating realistic fire, smoke, water, and explosion simulations.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-headset"></i> Service Cloud</h4>
-                <p>Deliver exceptional customer service with case management, knowledge base, and omnichannel support solutions.</p>
+                <h4><i className="fas fa-user-astronaut"></i> Digital Set Extension</h4>
+                <p>Expanding physical locations with fully digital, photorealistic environments.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-bullhorn"></i> Marketing Cloud</h4>
-                <p>Create personalized customer journeys with email marketing, social media management, and marketing automation.</p>
+                <h4><i className="fas fa-eraser"></i> Clean-up &amp; Wire Removal</h4>
+                <p>Removing unwanted equipment, wires, or crew from recorded footage.</p>
               </div>
               <div className="feature-box">
-                <h4><i className="fas fa-cogs"></i> Custom Development</h4>
-                <p>Build custom Salesforce applications using Apex, Lightning components, and Visualforce for your unique business needs.</p>
+                <h4><i className="fas fa-ghost"></i> CGI Integration</h4>
+                <p>Seamlessly blending computer-generated objects into live-action plates.</p>
               </div>
             </div>
             <div className="service-image">
               <div className="placeholder-icon">
-                <i className="fab fa-salesforce"></i>
+                <i className="fas fa-magic"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/*  Our Salesforce Services  */}
+      {/*  Details Section  */}
       <section className="service-detail">
         <div className="container">
           <div className="service-detail-grid">
             <div className="detail-content">
-              <h3>Our Salesforce Services</h3>
-              <p>We provide end-to-end Salesforce solutions to help you maximize the value of your CRM investment.</p>
+              <h3>Our VFX Pipeline</h3>
+              <p>We deliver Hollywood-standard visual effects for film, television, and high-end commercials.</p>
               <ul className="detail-list">
                 <li>
-                  <h5>Implementation</h5>
-                  <p>End-to-end Salesforce implementation tailored to your business processes and requirements.</p>
+                  <h5>Pre-visualization</h5>
+                  <p>Detailed planning and rough animations to assist on-set production.</p>
                 </li>
                 <li>
-                  <h5>Integration</h5>
-                  <p>Seamless integration with third-party applications, ERP systems, and legacy databases.</p>
+                  <h5>Look Development</h5>
+                  <p>Establishing the aesthetic style, lighting, and textures for digital assets.</p>
                 </li>
                 <li>
-                  <h5>Consulting</h5>
-                  <p>Expert consulting to optimize your Salesforce org and maximize ROI on your investment.</p>
+                  <h5>Matchmoving</h5>
+                  <p>Precise 3D camera tracking to link real scenes with virtual cameras.</p>
                 </li>
                 <li>
-                  <h5>Training</h5>
-                  <p>Comprehensive training programs for administrators, developers, and end-users.</p>
+                  <h5>Simulation &amp; FX</h5>
+                  <p>Building complex physical simulations like fluids, cloth, and destruction.</p>
                 </li>
               </ul>
             </div>
             <div className="detail-image">
               <div className="placeholder-icon">
-                <i className="fas fa-cloud-upload-alt"></i>
+                <i className="fas fa-film"></i>
               </div>
             </div>
           </div>
@@ -98,13 +98,13 @@ const Salesforce = () => {
       {/*  CTA Section  */}
       <section className="service-cta">
         <div className="container">
-          <h2>Ready to Transform Your Business with Salesforce?</h2>
-          <p>Let our certified Salesforce experts help you leverage the world's #1 CRM platform.</p>
-          <Link to="/contact" className="btn-cta">Get Started Today</Link>
+          <h2>Ready to Create Impossible Realities?</h2>
+          <p>Collaborate with our VFX artists to bring your ultimate vision to the screen.</p>
+          <Link to="/contact" className="btn-cta">Start Your Project</Link>
         </div>
       </section>
     </>
   );
 };
 
-export default Salesforce;
+export default VisualEffects;
