@@ -30,13 +30,13 @@ const Home = () => {
         {
             title: "Customer Relationship Management System (CRM)",
             desc: "Optimizes interactions and data management to enhance customer satisfaction and loyalty.",
-            img: "/assets/image.png",
+            img: "/assets/crm.png",
             alt: "CRM"
         },
         {
             title: "Human Resource Management System (HRMS)",
             desc: "Streamlines HR tasks like recruitment, payroll, and employee management.",
-            img: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600",
+            img: "https://acstechconsulting.com/static/media/hrms_hero.e482207641021c16cb81.webp",
             alt: "HRMS"
         },
         
@@ -120,33 +120,43 @@ const Home = () => {
         <>
             {/*  Hero Section  */}
             <section className="hero" id="home">
+                <div className="carousel-indicators">
+                    {slides.map((_, index) => (
+                        <button
+                            key={index}
+                            type="button"
+                            className={index === currentSlide ? 'active' : ''}
+                            onClick={() => goToSlide(index)}
+                            aria-label={`Slide ${index + 1}`}
+                        ></button>
+                    ))}
+                </div>
+
                 <div className="hero-slider">
                     {slides.map((slide, index) => (
                         <div key={index} className={`hero-slide ${index === currentSlide ? 'active' : ''}`}>
-                            <div className="container hero-container">
-                                <div className="hero-content">
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.desc}</p>
-                                    <Link to="/contact" className="btn-primary">Get in touch</Link>
-                                </div>
-                                <div className="hero-image">
-                                    <img src={slide.img} alt={slide.alt} />
+                            <div className="slide-content">
+                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+                                    <div style={{ zIndex: 0, flexGrow: 1, flexBasis: '400px', padding: '10px' }}>
+                                        <div className="slid-text">
+                                            <h3 className="slide-title">{slide.title}</h3>
+                                            <p className="slide-description">{slide.desc}</p>
+                                            <div className="button-group">
+                                                <Link to="/contact" className="slider-btn">Get in touch</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{ zIndex: 0, flexGrow: 1, flexBasis: '400px', padding: '10px' }}>
+                                        <img className="slide-image" src={slide.img} alt={slide.alt} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
+
                 <button className="slider-arrow prev-btn" onClick={prevSlide}><i className="fas fa-chevron-left"></i></button>
                 <button className="slider-arrow next-btn" onClick={nextSlide}><i className="fas fa-chevron-right"></i></button>
-                <div className="slider-dots">
-                    {slides.map((_, index) => (
-                        <div
-                            key={index}
-                            className={`dot ${index === currentSlide ? 'active' : ''}`}
-                            onClick={() => goToSlide(index)}
-                        ></div>
-                    ))}
-                </div>
             </section>
 
 
@@ -287,10 +297,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="how-we-work">
+                    {/* <div className="how-we-work">
                         <h3>HOW WE WORK</h3>
                         <p>ASIONIX COMMITMENTS</p>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
@@ -404,23 +414,39 @@ const Home = () => {
             </section>
 
             {/*  Clients Section  */}
-            <section className="clients">
-                <div className="container">
-                    <h2 className="section-title">Our Clients</h2>
-                    <div className="clients-slider">
-                        <div className="clients-track">
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+1" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+2" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+3" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+4" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+5" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+6" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+1" alt="Client" /></div>
-                            <div className="client-logo"><img src="https://placehold.co/150x80/0a1628/ffffff?text=Client+2" alt="Client" /></div>
-                        </div>
+            {/*  Clients Section  */}
+            <div className="main_client">
+                <h1 className="client-heading">Our Client</h1>
+                <div className="ourclient-container">
+                    <div className="ourclient">
+                        {/* Original 11 Logos */}
+                        <img src="https://acstechconsulting.com/static/media/2.png.78d08d97209f34f73476.webp" alt="logo-0" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/5.png.394e8bff5c7b95a13616.webp" alt="logo-1" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/6.png.171255bceebffcb5baa3.webp" alt="logo-2" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/7.png.0bc2627ceae55aafb81c.webp" alt="logo-3" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/8.png.c95892b141e0c5577706.webp" alt="logo-4" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/10.png.7ddc91faa9e378a7f079.webp" alt="logo-5" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/11.png.f3dfc411d4924170fafb.webp" alt="logo-6" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/12.png.3b362d9527518dea3914.webp" alt="logo-7" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/13.png.b83a0b9d17fb8427e1a3.webp" alt="logo-8" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/14.png.cdde1ba8b25c2f4bec51.webp" alt="logo-9" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/9.png.66353cd2d1bcb15569a9.webp" alt="logo-10" className="clientlogo" />
+                        
+                        {/* Duplicated 11 Logos for seamless marquee */}
+                        <img src="https://acstechconsulting.com/static/media/2.png.78d08d97209f34f73476.webp" alt="logo-0-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/5.png.394e8bff5c7b95a13616.webp" alt="logo-1-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/6.png.171255bceebffcb5baa3.webp" alt="logo-2-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/7.png.0bc2627ceae55aafb81c.webp" alt="logo-3-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/8.png.c95892b141e0c5577706.webp" alt="logo-4-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/10.png.7ddc91faa9e378a7f079.webp" alt="logo-5-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/11.png.f3dfc411d4924170fafb.webp" alt="logo-6-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/12.png.3b362d9527518dea3914.webp" alt="logo-7-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/13.png.b83a0b9d17fb8427e1a3.webp" alt="logo-8-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/14.png.cdde1ba8b25c2f4bec51.webp" alt="logo-9-copy" className="clientlogo" />
+                        <img src="https://acstechconsulting.com/static/media/9.png.66353cd2d1bcb15569a9.webp" alt="logo-10-copy" className="clientlogo" />
                     </div>
                 </div>
-            </section>
+            </div>
 
             {/*  Footer  */}
         </>

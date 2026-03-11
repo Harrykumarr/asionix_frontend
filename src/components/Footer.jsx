@@ -49,11 +49,9 @@ const Footer = () => {
                             <li><Link to="/services/data-science-training">Data Migration</Link></li>
                             <li><Link to="/services/data-science-training">Data Mining</Link></li>
                             <li><Link to="/services/data-science-training">Data Visualization</Link></li>
-                            <li><Link to="/services/data-science-training">Data Analytics & Reporting</Link></li>
+                            <li><Link to="/services/data-science-training">Data Analytics &amp; Reporting</Link></li>
                         </ul>
-                    </div>
-                    <div className="footer-col">
-                        <h3>Digital Marketing</h3>
+                        <h3 style={{ marginTop: '20px' }}>Digital Marketing</h3>
                         <ul>
                             <li><Link to="/services/seo">SEO</Link></li>
                             <li><Link to="/services/social-media-marketing">SMO</Link></li>
@@ -66,21 +64,22 @@ const Footer = () => {
                         <h3>Resources</h3>
                         <ul>
                             <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Shipping &amp; Delivery</a></li>
                             <li><a href="#">Refund Policy</a></li>
                             <li><Link to="/contact">Contact Us</Link></li>
                         </ul>
+                        <h3 style={{ marginTop: '20px' }}>Connect With Us</h3>
+                        <div className="social-icons-footer" style={{ justifyContent: 'flex-start', marginTop: '10px' }}>
+                            <a href="https://wa.me/918125452828" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61563162418689" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/asvconsultingservices" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/asv-consulting-services/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <div className="footer-contact">
-                    <h3>Connect With Us</h3>
-                    <div className="social-icons-footer">
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
-                    </div>
                     <div className="office-section">
                         <div className="office-card">
                             <img src="https://flagcdn.com/w40/in.png" alt="India Flag" />
