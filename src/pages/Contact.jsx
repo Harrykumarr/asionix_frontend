@@ -102,7 +102,7 @@ const Contact = () => {
     return (
         <>
             {/*  Page Header  */}
-            <section className="page-header">
+            <section className="contact-page-header">
                 <div className="container">
                     <h1>Contact Us</h1>
                     <p>Get in touch with us today</p>
@@ -116,6 +116,10 @@ const Contact = () => {
                         <div className="contact-info-section">
                             <h2>Let's Start a Conversation</h2>
                             <p>Have a project in mind? We would love to hear from you. Send us a message and we will respond as soon as possible.</p>
+                            
+                            <div className="contact-simple-image">
+                                <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?w=800&q=80" alt="Customer Support" />
+                            </div>
 
                             <div className="contact-details">
                                 <div className="contact-item">

@@ -4,15 +4,23 @@ import { Link } from 'react-router-dom';
 const Outsourcing = () => {
     return (
         <>
-            {/*  Hero Section  */}
-            <section className="outsourcing-hero">
+            {/*  Outsourcing Premium UI Hero  */}
+            <section className="outsourcing-hero-ui">
                 <div className="container">
-                    <div className="hero-content">
-                        <h1>Hire Dedicated Resource at <span>Best Price</span></h1>
-                        <p>From startups to large enterprises, we deliver our customer's expectations meeting excellence of our app developers. Within a short span, Asionix has emerged as one of the top development companies in India and across the world.</p>
-                    </div>
-                    <div className="hero-image">
-                        <i className="fas fa-laptop-code"></i>
+                    <div className="outsourcing-hero-grid">
+                        <div className="text-col">
+                            <h1>Hire Dedicated Resources at <br/><span className="highlight-text">Best Price</span></h1>
+                            <p>From startups to large enterprises, we deliver beyond our customer's expectations, matching the excellence of our top-tier app developers. Within a short span, Asionix has emerged as one of the elite development companies globally.</p>
+                            <div className="hero-actions">
+                                <Link to="/contact" className="btn-primary">Hire Developers <i className="fas fa-arrow-right"></i></Link>
+                            </div>
+                        </div>
+                        <div className="image-col">
+                            <div className="hero-group-image">
+                                <div className="image-overlay-glow"></div>
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=80" alt="Group of Developers" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

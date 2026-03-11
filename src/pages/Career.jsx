@@ -6,7 +6,7 @@ const Career = () => {
       {/*  Career Banner  */}
       <section className="career-banner">
         <div className="container">
-          <h1>Work at <span>Asionix Technologies</span> Services</h1>
+          <h1>Work at <span>Asionix</span></h1>
           <p>
             We design and develop solutions that empower businesses to thrive.
             Partnering with visionaries like you, we collaborate to craft

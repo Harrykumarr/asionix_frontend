@@ -3,11 +3,13 @@ import React from 'react';
 const About = () => {
   return (
     <>
-{/*  Page Header  */}
-    <section className="page-header">
+{/*  Dynamic Page Header  */}
+    <section className="page-header about-header">
         <div className="container">
-            <h1>About Us</h1>
-            <p>Discover who we are and what drives us</p>
+            <div className="about-hero-content">
+                <h1>About Us</h1>
+                <p>Discover who we are and what drives us</p>
+            </div>
         </div>
     </section>
 

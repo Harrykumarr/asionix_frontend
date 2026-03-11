@@ -1,19 +1,21 @@
-.page-header {
-    padding: 150px 0 80px;
-    background: var(--primary-blue);
+.contact-page-header {
+    padding: 120px 0;
+    background: linear-gradient(rgba(10, 22, 40, 0.8), rgba(10, 22, 40, 0.9)), url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=1200&q=80') center/cover no-repeat;
     text-align: center;
+    border-bottom: 2px solid var(--highlight-orange);
 }
 
-.page-header h1 {
+.contact-page-header h1 {
     font-size: 48px;
     font-weight: 700;
-    color: var(--highlight-orange);
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
-.page-header p {
-    font-size: 18px;
-    color: var(--text-gray);
+.contact-page-header p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--highlight-orange);
 }
 
 .contact-page {
@@ -35,8 +37,22 @@
 
 .contact-info-section>p {
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.8;
+}
+
+.contact-simple-image {
+    margin-bottom: 35px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-simple-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
 }
 
 .contact-item {
@@ -79,12 +95,14 @@
 .contact-form-section {
     background: #fff;
     border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    padding: 50px 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .contact-form h3 {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 700;
     margin-bottom: 30px;
     color: var(--primary-blue);
 }
@@ -96,7 +114,7 @@
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .form-group label {
@@ -104,21 +122,21 @@
     margin-bottom: 8px;
     color: var(--primary-blue);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 15px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    transition: border-color 0.3s ease;
+    padding: 16px 20px;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    color: #334155;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
@@ -126,17 +144,34 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--highlight-orange);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(243, 156, 18, 0.1);
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 140px;
 }
 
 .contact-form .btn-primary {
     width: 100%;
     padding: 18px;
     font-size: 16px;
+    font-weight: 600;
+    background: var(--highlight-orange);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
+    margin-top: 10px;
+}
+
+.contact-form .btn-primary:hover {
+    background: #d68910;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(243, 156, 18, 0.4);
 }
 
 /* Added styles for file input */
@@ -144,22 +179,24 @@
     padding: 12px;
     background: #fff;
     cursor: pointer;
+    border: 2px dashed #e2e8f0;
 }
 
 .form-group input[type="file"]::file-selector-button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     margin-right: 15px;
-    background: var(--gradient-orange);
-    border: none;
-    border-radius: 5px;
-    color: white;
+    background: rgba(243, 156, 18, 0.1);
+    color: var(--highlight-orange);
+    border: 1px solid rgba(243, 156, 18, 0.3);
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .form-group input[type="file"]::file-selector-button:hover {
-    opacity: 0.9;
+    background: var(--highlight-orange);
+    color: #ffffff;
 }
 
 @media (max-width: 992px) {
