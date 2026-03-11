@@ -6,7 +6,7 @@ const ReactjsDevelopment = () => {
     <>
       {/*  Hero Banner  */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('/react-banner.png')",
+        backgroundImage: "linear-gradient(rgba(5, 10, 20, 0.72), rgba(10, 20, 35, 0.76)), url('https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1600&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "100px 0 80px",

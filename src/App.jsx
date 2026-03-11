@@ -33,6 +33,7 @@ import Odoo from './pages/services/Odoo';
 import PhpDevelopment from './pages/services/PhpDevelopment';
 import PpcServices from './pages/services/PpcServices';
 import ReactNative from './pages/services/ReactNative';
+import CrossPlatform from './pages/services/CrossPlatform';
 import ReactjsDevelopment from './pages/services/ReactjsDevelopment';
 import Salesforce from './pages/services/Salesforce';
 import SapAbap from './pages/services/SapAbap';
@@ -86,6 +87,7 @@ function App() {
           <Route path="services/php-development" element={<PhpDevelopment />} />
           <Route path="services/ppc-services" element={<PpcServices />} />
           <Route path="services/react-native" element={<ReactNative />} />
+          <Route path="services/cross-platform" element={<CrossPlatform />} />
           <Route path="services/reactjs-development" element={<ReactjsDevelopment />} />
           <Route path="services/salesforce" element={<Salesforce />} />
           <Route path="services/sap-abap" element={<SapAbap />} />

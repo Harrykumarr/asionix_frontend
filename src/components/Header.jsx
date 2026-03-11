@@ -44,7 +44,7 @@ const Header = () => {
                                 <ul>
                                     <li><Link to="/services/android-development">Android Development</Link></li>
                                     <li><Link to="/services/iphone-development">iPhone Development</Link></li>
-                                    <li><Link to="/services/react-native">Cross Platform</Link></li>
+                                    <li><Link to="/services/cross-platform">Cross Platform</Link></li>
                                     <li><Link to="/services/react-native">React Native Development</Link></li>
                                     <li><Link to="/services/flutter-development">Flutter Development</Link></li>
                                 </ul>
